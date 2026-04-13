@@ -1,49 +1,23 @@
 # User specific configuration
-# Copy this sample file to local.yml then change it
-
-# Activate/deactivate optional roles by uncommenting the associated variable below
-# (default settings are defined in all.yml)
-epics_modules_build: true
-#catrust: true
-#epics_tools: false
-#oac_tree: true
-#docker: true
-#bluesky: true
-
-# List the EPICS modules that will be built in this order (base is mandatory)
-epics_modules_list:
-  - base
-  - pvxs
-# Two alternative Python wrappers
-#  - p4p
-#  - pvapy
 #
-#  - seq
-#  - asyn
-#  - opcua
-# AreaDetector dependencies
-#  - autosave
-#  - busy
-#  - sscan
-#  - calc
-#  - adcore
-#  - adsimdetector
-#  - adpvadriver
+# Copy this file to 'local.yml' (which is gitignored) and change as you like
 
-# Set proxies, if needed
-#proxy_env:
-#  http_proxy: http://proxy.example.com:8080
-#  https_proxy: http://proxy.example.com:8080
+# You can also create other setup files, e.g., 'myVM.yml'
+# and specify it on the ansible-playbook command line:
+# ansible-playbook ... playbook.yml -e @vars/myVM.yml
 
-#proxy_mvn:
-#  - <proxy><id>httpproxy</id><active>true</active><protocol>http</protocol><host>proxy.example.com</host><port>8080</port></proxy>
-#  - <proxy><id>httpsproxy</id><active>true</active><protocol>https</protocol><host>proxy.example.com</host><port>8080</port></proxy>
+# Flag to rebuild everything from source even if it already exists
+# epics_rebuild_all: true
 
+# Modules to be built
+m_base: true
+m_p4p: true
+m_stream: true
+m_opcua: true
 
-# [catrust] CA certificate to work through corporate firewall with deep packet inspection
-# (like e.g. ITER uses)
-#root_ca_url: "http://pki.iter.org/CertEnroll/io-ws-pkiroot_ITER%20Organization%20Root%20CA.crt"
-
-#ca_trust_folder: "/var/lib/training-vm/ca_trust"
-#ca_trust_der_path: "{{ ca_trust_folder }}/corporate_root_ca.der.crt"
-#ca_trust_pem_path: "{{ ca_trust_folder }}/corporate_root_ca.pem.crt"
+# Services & applications
+phoebus: true
+oac-tree: true
+# archiver_appliance: true
+# docker: true
+# bluesky: true
