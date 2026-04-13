@@ -1,17 +1,20 @@
 [submodule "vm-setup"]
-	path = vm-setup
+        path = vm-setup
 	url = https://github.com/epics-training/training-vm
-[submodule "areadetector-training"]
-	path = areadetector-training
-	url = https://github.com/epics-training/areadetector-training
+	branch = main
 [submodule "epics7-overview"]
-	path = epics7-overview
+        path = epics7-overview
 	url = https://github.com/epics-training/epics7-overview
+	branch = main
 [submodule "opcua-support"]
-	path = opcua-support
+        path = opcua-support
 	url = https://github.com/epics-training/opcua-support
 	branch = main
 [submodule "phoebus-training"]
-	path = phoebus-training
+        path = phoebus-training
 	url = https://github.com/epics-training/phoebus-training
+	branch = main
+[submodule "stream-introduction"]
+	path = stream-introduction
+	url = https://github.com/epics-training/stream-introduction
 	branch = main
