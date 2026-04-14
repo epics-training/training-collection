@@ -23,8 +23,10 @@ which are linked as git submodules.
 
 ## Valid training event slugs / branches
 
-| Slug               | Training                                            |
-| ----               | --------                                            |
-| &lt;empty&gt;      | &lt;main branches of everything for development&gt; |
-| 2024-spring-pohang | EPICS Collab. Meeting April 2024 in Pohang          |
-| 2024-fall-oakridge | EPICS Collab. Meeting September 2024 in Oak Ridge   |
+| Slug                | Training                                            |
+| ----                | --------                                            |
+| &lt;empty&gt;       | &lt;main branches of everything for development&gt; |
+| 2024-spring-pohang  | EPICS Collab. Meeting April 2024 in Pohang          |
+| 2024-fall-oakridge  | EPICS Collab. Meeting September 2024 in Oak Ridge   |
+| 2025-spring-harwell | EPICS Collab. Meeting April 2025 on Harwell campus  |
+| 2026-spring-saclay  | EPICS Collab. Meeting April 2026 in Saclay          |
