@@ -17,7 +17,7 @@ m_opcua: true
 
 # Services & applications
 phoebus: true
-oac-tree: true
+oac_tree: true
 # archiver_appliance: true
 # docker: true
 # bluesky: true
