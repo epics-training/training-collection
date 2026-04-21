@@ -7,11 +7,13 @@
 [submodule "epics7-overview"]
 	path = epics7-overview
 	url = https://github.com/epics-training/epics7-overview
-[submodule "opcua-support"]
-	path = opcua-support
-	url = https://github.com/epics-training/opcua-support
-	branch = main
 [submodule "phoebus-training"]
 	path = phoebus-training
 	url = https://github.com/epics-training/phoebus-training
 	branch = main
+[submodule "wfsim-demo"]
+	path = wfsim-demo
+	url = https://github.com/osprey-dcs/wfsim-demo
+[submodule "pscdrv"]
+	path = pscdrv
+	url = https://github.com/osprey-dcs/pscdrv
